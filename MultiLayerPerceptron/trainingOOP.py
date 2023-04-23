@@ -1,10 +1,11 @@
 ### OBJECT-ORIENTED VERSION
+# %%
 import numpy as np
 import torch
 import torch.nn.functional as F
 import torch.nn as nn
 from torchvision import datasets, transforms
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 # Load the data
 mnist_train = datasets.MNIST(root="./datasets", train=True, transform=transforms.ToTensor(), download=True)
@@ -36,6 +37,7 @@ model = Net(n0, n1, n2)
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.SGD(model.parameters(), lr=0.3)
 
+# %%
 #Define number of epochs
 num_epochs = 1
 
@@ -56,6 +58,8 @@ for epoch in range(num_epochs):
         # Update weights
         optimizer.step()
 
+
+# %%
 ## Testing - OBJECT-ORIENTED VERSION
 correct = 0
 total = len(mnist_test)
@@ -70,3 +74,4 @@ with torch.no_grad():
 
 # Make sure to print out your accuracy on the test set at the end.
 print('Test accuracy: {}'.format(correct/total))        
+# %%

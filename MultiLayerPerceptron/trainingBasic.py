@@ -1,9 +1,10 @@
 ### YOUR CODE HERE
+# %%
 import numpy as np
 import torch
 import torch.nn.functional as F
 from torchvision import datasets, transforms
-from tqdm.notebook import tqdm
+from tqdm import tqdm
 
 # Load the data
 mnist_train = datasets.MNIST(root="./datasets", train=True, transform=transforms.ToTensor(), download=True)
@@ -28,8 +29,10 @@ b2 = torch.zeros(n2, requires_grad=True)
 #Create optimizer
 optimizer = torch.optim.SGD([W1,W2,b1,b2], lr=0.3)
 
+# %%
+
 #Define number of epochs
-num_epochs = 16
+num_epochs = 1
 
 #Perform training for multiple epochs
 for epoch in range(num_epochs):
@@ -50,6 +53,8 @@ for epoch in range(num_epochs):
         # Backward
         cross_entropy.backward()
         optimizer.step()
+
+# %%
 
 ## Testing
 correct = 0
@@ -72,3 +77,5 @@ print('Test accuracy: {}'.format(correct/total))
 
 
       
+
+# %%
