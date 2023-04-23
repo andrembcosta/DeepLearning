@@ -4,28 +4,25 @@ Small deep learning projects for learning, practicing PyTorch and creating my ow
 ## Table of Contents
 
 - [Image Recognition](#image-recognition)
-  - [Multi-layer Percetron](#mlp)
-  - [Convolutational Neural Nets](#cnn)
-- [Natural Languague Processing](#nlp)
-- [Reinforcement Learning](#rl)
+  - [Multi-layer Perceptron](#multi-layer-perceptron)
+  - [Convolutational Neural Nets](#convolutional-neural-networks)
+- [Natural Languague Processing](#natural-language-processing)
+- [Reinforcement Learning](#reinforcement-learning)
 
 
-# image-recognition
+# Image recognition
 <sup>[(Back to top)](#table-of-contents)</sup>
 
 Comparison between MLP and CNN
 
-## mlp
+## Multi-Layer Perceptron
 
-Add some pictures, details and table with results
+This is a sketch of the network architecture used and the data set of handwritten digits.
 
-<p align="middle">
-
-<!-- ![Snap](probability%20of%20snap.png) -->
-<img src="img/hidden_layer.png" width="450" height="350"/>
-
-<!-- ![Snap](probability%20of%20snap.png) -->
-<img src="img/mnist.png" width="450" height="350"/>
+<p float="middle">
+<img src="img/mnist.png" width="350" height="250"/>
+<img src="img/hidden_layer.png" width="250" height="250"/>
+</p>
 
 This table compares the accuracy obtained (in the validation set) with different learning rates and epochs used in the training process.
 
@@ -39,18 +36,18 @@ This table compares the accuracy obtained (in the validation set) with different
 
 It indicates that the performance begins to stall for learning rates beyond 0.3 and that adding more than 8 epochs does not seem to improve the performance.
 
-</p>
 
-## cnn
+
+## Convolutional Neural Networks
 
 Add some pictures, details and table with results
 
-# nlp
+# Natural Language Processing
 <sup>[(Back to top)](#table-of-contents)</sup>
 
 Natural Language Processing
 
-# rl
+# Reinforcement Learning
 <sup>[(Back to top)](#table-of-contents)</sup>
 
 Reinforcement Learning
